@@ -10,15 +10,14 @@
     3.  Utilities
     4.  General
     5.  Single Post
-    6.  Author Profile
-    7.  Read More
+    6.  Tag Archive
+    7.  Read Next
     8.  Third Party Elements
     9.  Pagination
-    10. Subscribe
-    11. Footer
-    12. Media Queries (Tablet)
-    13. Media Queries (Mobile)
-    14. Animations
+    10.  Footer
+    11. Media Queries (Tablet)
+    12. Media Queries (Mobile)
+    13. Animations
 
 */
 
@@ -287,10 +286,6 @@ dl dd {
     margin-bottom: 1em
 }
 
-li {
-    margin: 0.4em 0;
-}
-
 li li {
     margin: 0;
 }
@@ -480,7 +475,7 @@ input[type="time"]:focus,
 input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 textarea:focus {
-    border: #bbc7cc 1px solid;
+    border: rgba(0,0,0,.55) 2px solid;
     background: #fff;
     outline: none;
     outline-width: 0;
@@ -490,28 +485,6 @@ select {
     width: 270px;
     height: 30px;
     line-height: 30px;
-}
-
-button {
-    min-height: 35px;
-    width: auto;
-    display: inline-block;
-    padding: 0.1rem 1.5rem;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 11px; // Hack because Firefox sucks ass.
-    line-height: 13px; // Hack because Firefox sucks ass.
-    font-weight: 300;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: none;
-    border-radius: 0.3rem;
-    border: rgba(0,0,0,0.05) 0.1em solid;
-    background: #5ba4e5;
 }
 
 
@@ -1467,7 +1440,7 @@ body:not(.post-template) .post-title {
 }
 
 .read-next-story .post:before {
-    content: "Read This Next";
+    content: "Читать";
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -1478,7 +1451,7 @@ body:not(.post-template) .post-title {
     transition: all 0.5s ease;
 }
 .read-next-story.prev .post:before {
-    content: "You Might Enjoy";
+    content: "Вам может понравиться";
 }
 
 .read-next-story h2 {
@@ -1886,7 +1859,7 @@ body:not(.post-template) .post-title {
 
 
 /* ==========================================================================
-   13. Media Queries - Smaller than 500px
+   12. Media Queries - Smaller than 500px
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
@@ -2161,7 +2134,7 @@ body:not(.post-template) .post-title {
 
 
 /* ==========================================================================
-   14. Animations
+   13. Animations
    ========================================================================== */
 
 /* Used to fade in title/desc on the home page */

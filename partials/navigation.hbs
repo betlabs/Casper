@@ -1,17 +1,69 @@
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
+<nav class="b-navigation">
+    <div class="navigation-content">
+        <div class="logo-container">
+            <a href="/">
+                <svg class="manifold" width="27px" height="80px" viewBox="0 0 27 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="main" sketch:type="MSArtboardGroup" transform="translate(-139.000000, 0.000000)" fill="#39A9ED">
+                        <g id="manifold" sketch:type="MSLayerGroup" transform="translate(140.000000, 26.000000)">
+                            <g id="Page-1" sketch:type="MSShapeGroup">
+                                <g id="Artboard-1">
+                                    <path d="M0.0169624317,25.997453 L2.07896838,19.5902506 L14.9300565,19.5902506 L14.9300565,13.442799 C14.9300565,10.0948741 14.6592912,8.09985867 14.1177514,7.45769165 C13.5762116,6.81552551 11.8752472,6.49444732 9.01480641,6.49444732 L1.24583417,6.49444732 L3.30784012,0.087244041 L9.91042549,0.087244041 C14.0900008,0.087244041 16.8809714,0.722186011 18.2834199,1.99208857 C19.1165583,2.72805449 19.6650324,3.64799816 19.9288591,4.75194793 C20.1926867,5.85589681 20.3245975,7.77154479 20.3245975,10.4989486 L20.3245975,19.5902506 L23.6571326,19.5902506 L21.615955,25.997453 L0.0169624317,25.997453 L0.0169624317,25.997453 Z" id="ב"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                </svg>
+            </a>
+        </div>
+        <ul class="navigation-items">
+            <li class="navigation-item-mobile-icon">
+                <label class="mobile-menu-label js-mobile-menu">
+                    <span class="mobile-menu-stroke mobile-menu-stroke_top">
+                        <span class="mobile-menu-stroke__top"></span>
+                    </span>
+                    <span class="mobile-menu-stroke mobile-menu-stroke_bottom">
+                        <span class="mobile-menu-stroke__bottom"></span>
+                    </span>
+                </label>
+            </li>
+            <li class="navigation-item navigation-item_as-link" data-level="1">
+                <a class="navigation-item__link">
+                    О Нас
+                </a>
+            </li>
+            <li class="navigation-item navigation-item_as-link n-link-1" data-level="2">
+                <a class="navigation-item__link">
+                    Услуги
+                </a>
+            </li>
+            <li class="navigation-item navigation-item_as-link n-link-2" data-level="3">
+                <a class="navigation-item__link">
+                    Портфолио
+                </a>
+            </li>
+            <li class="navigation-item navigation-item_as-link n-link-3" data-level="4">
+                <a class="navigation-item__link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="mobile-menu">
+    <ul class="m-menu">
+        <li class="m-menu-item" data-level="1">
+            <a class="m-menu-item__link">О Нас</a>
+        </li>
+        <li class="m-menu-item" data-level="2">
+            <a class="m-menu-item__link">Услуги</a>
+        </li>
+        <li class="m-menu-item" data-level="3">
+            <a class="m-menu-item__link">Портфолио</a>
+        </li>
+        <li class="m-menu-item" data-level="4">
+            <a class="m-menu-item__link">Контакты</a>
+        </li>
     </ul>
-    {{#if @labs.subscribers}}
-        <a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe</a>
-    {{else}}
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    {{/if}}
 </div>
-<span class="nav-cover"></span>

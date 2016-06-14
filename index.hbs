@@ -1,27 +1,436 @@
 {{!< default}}
-{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
-
-{{!-- The big featured header --}}
-<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav overlay clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-        {{#if @blog.navigation}}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {{/if}}
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{@blog.title}}</h1>
-            <h2 class="page-description">{{@blog.description}}</h2>
+<section class="b-section introduction" style="text-align: center;">
+    <div class="intro">
+    </div>
+    <div class="introduction-part">
+        <div class="introduction-logo">
+            <img src="src/img/logo-ru.svg" class="intro-logo">
+        </div>
+        <div class="intro-buttons">
+            <button class="btn btn_rounded btn_grey js-left-action-btn js-labs-btn" style="margin: 20px 20px 20px 0;">Услуги</button>
+            <button class="btn btn_rounded btn_start js-start-btn">Начать!</button>
+        </div>
+    </div>  
+    
+    <div class="introduction-text"></div>
+    <div class="introduction-text">Вот почему BetLabs создает <span class="introduction-text__highlight">лучшие</span> IT решения</div>
+    <div class="introduction-text">Со <span class="introduction-text__highlight">страстью</span> и вниманием к деталям</div>
+    <div class="introduction-text">Мы усердно <span class="introduction-text__highlight">работаем</span> над каждым проектом</div>
+</section>
+<section class="b-section section-about">
+    <div class="grid grid-pad" style="margin-bottom: 100px;">
+        <div class="col-1-1">
+           <div class="content">
+               <div class="b-section-main-words">Качество. Технологии. Стиль.</div>
+               <div class="b-section-expl-statement">Мы с радостью станем частью вашей команды.</div>
+           </div>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+    <div class="grid grid-pad">
+        <div class="col-1-3 what">
+           <div class="content about-elem">
+               <h3 class="about-elem__header">Что.</h3>
+               <div class="about-elem__img">
+                    <svg class="about-what-svg" width="100px" height="100px" viewBox="0 0 85 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 
-{{!-- The main content area on the homepage --}}
-<main id="content" class="content" role="main">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-233.000000, -251.000000)" fill="#000000">
+                            <path d="M261.367188,308 L263.78418,300.773438 L278.847656,300.773438 L278.847656,293.839844 C278.847656,290.063783 278.530277,287.813643 277.895508,287.089355 C277.260739,286.365068 275.266944,286.00293 271.914062,286.00293 L262.807617,286.00293 L265.224609,278.776367 L272.963867,278.776367 C277.86298,278.776367 281.134432,279.492506 282.77832,280.924805 C283.754888,281.754887 284.397785,282.792474 284.707031,284.037598 C285.016278,285.282721 285.170898,287.443344 285.170898,290.519531 L285.170898,300.773438 L289.077148,300.773438 L286.68457,308 L261.367188,308 Z" id="ב" sketch:type="MSShapeGroup"></path>
+                        </g>
+                    </g>
+                </svg>
+               </div>
+               <div class="about-elem__text"><span class="betlabs-text">BetLabs</span> - это команда профессиональных разработчиков ПО / дизайнеров и учёных. Мы берем на себя решение IT проблем вашего бизнеса.</div>
+           </div>
+        </div>
+        <div class="col-1-3 how">
+           <div class="content about-elem">
+               <h3 class="about-elem__header">Как.</h3>
+               <div class="about-elem__img">
+                   <svg class="about-how-svg" width="60px" height="100px" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="about" sketch:type="MSArtboardGroup" transform="translate(-915.000000, -429.000000)">
+                                <rect id="Rectangle-1" stroke="#979797" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="1440" height="782"></rect>
+                                <g id="ic_wb_sunny_black_24px" sketch:type="MSLayerGroup" transform="translate(921.000000, 435.000000)" fill="#FFC107">
+                                    <path d="M17.5418182,13.4485706 L12.06,7.97231487 L7.76590909,12.2860135 L13.2172727,17.7622692 L17.5418182,13.4485706 L17.5418182,13.4485706 Z M9.13636364,30.7645523 L0,30.7645523 L0,36.8832738 L9.13636364,36.8832738 L9.13636364,30.7645523 L9.13636364,30.7645523 Z M36.5454545,0.323913043 L30.4545455,0.323913043 L30.4545455,9.3490272 L36.5454545,9.3490272 L36.5454545,0.323913043 L36.5454545,0.323913043 Z M59.2340909,12.2860135 L54.94,7.97231487 L49.4886364,13.4485706 L53.7827273,17.7622692 L59.2340909,12.2860135 L59.2340909,12.2860135 Z M49.4581818,54.1992555 L54.9095455,59.7061048 L59.2036364,55.3924062 L53.7218182,49.9161505 L49.4581818,54.1992555 L49.4581818,54.1992555 Z M57.8636364,30.7645523 L57.8636364,36.8832738 L67,36.8832738 L67,30.7645523 L57.8636364,30.7645523 L57.8636364,30.7645523 Z M33.5,15.4677487 C23.4195455,15.4677487 15.2272727,23.697429 15.2272727,33.823913 C15.2272727,43.9503971 23.4195455,52.1800774 33.5,52.1800774 C43.5804545,52.1800774 51.7727273,43.9503971 51.7727273,33.823913 C51.7727273,23.697429 43.5804545,15.4677487 33.5,15.4677487 L33.5,15.4677487 Z M30.4545455,67.323913 L36.5454545,67.323913 L36.5454545,58.2987989 L30.4545455,58.2987989 L30.4545455,67.323913 L30.4545455,67.323913 Z M7.76590909,55.3618126 L12.06,59.6755112 L17.5113636,54.1686619 L13.2172727,49.8549633 L7.76590909,55.3618126 L7.76590909,55.3618126 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+               </div>
+               <div class="about-elem__text">С нами удобно и приятно работать. Мы используем современный и одобренный IT сообществом стек технологий.</div>
+           </div>
+        </div>
+        <div class="col-1-3 why">
+           <div class="content about-elem">
+               <h3 class="about-elem__header">Почему.</h3>
+               <div class="about-elem__img">
+                    <svg class="about-why-svg" width="60px" height="100px" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 
-    {{!-- The tag below includes the post loop - partials/loop.hbs --}}
-    {{> "loop"}}
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="about" sketch:type="MSArtboardGroup" transform="translate(-1103.000000, -424.000000)">
+                                <rect id="Rectangle-1" stroke="#979797" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="1440" height="782"></rect>
+                                <g id="ic_favorite_border_black_24px" sketch:type="MSLayerGroup" transform="translate(1109.000000, 433.000000)" fill="#F44336">
+                                    <path d="M48.3125,0.875 C42.585,0.875 37.0879167,3.54125 33.5,7.75458333 C29.9120833,3.54125 24.415,0.875 18.6875,0.875 C8.54916667,0.875 0.583333333,8.84083333 0.583333333,18.9791667 C0.583333333,31.4216667 11.775,41.56 28.7270833,56.965 L33.5,61.2770833 L38.2729167,56.9320833 C55.225,41.56 66.4166667,31.4216667 66.4166667,18.9791667 C66.4166667,8.84083333 58.4508333,0.875 48.3125,0.875 L48.3125,0.875 Z M33.8291667,52.0604167 L33.5,52.3895833 L33.1708333,52.0604167 C17.5025,37.8733333 7.16666667,28.4920833 7.16666667,18.9791667 C7.16666667,12.3958333 12.1041667,7.45833333 18.6875,7.45833333 C23.7566667,7.45833333 28.6941667,10.7170833 30.43875,15.2266667 L36.5941667,15.2266667 C38.3058333,10.7170833 43.2433333,7.45833333 48.3125,7.45833333 C54.8958333,7.45833333 59.8333333,12.3958333 59.8333333,18.9791667 C59.8333333,28.4920833 49.4975,37.8733333 33.8291667,52.0604167 L33.8291667,52.0604167 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+               </div>
+               <div class="about-elem__text">Профессионализм и степень нашей вовлеченности в каждый проект.</div>
+           </div>
+        </div>
+    </div>
+</section>
+<section class="b-section section-labs">
+    <div class="grid grid-pad">
+        <div class="col-4-12 js-labs-menu">
+           <div class="content">
+               <ul class="labs-menu">
+                   <li class="labs-menu-item labs-menu-item_active" data-level="0">Веб-приложения</li>
+                   <li class="labs-menu-item" data-level="1">Дизайн</li>
+                   <li class="labs-menu-item" data-level="2">Маркетинг</li>
+                   <li class="labs-menu-item" data-level="3">Анализ данных</li>
+               </ul>
+           </div>
+        </div>
+        <div class="col-8-12 js-labs-desc">
+            <div class="labs-container">
+                <div class="labs-full">
+                    <div class="content b-lab">
+                        <h1 class="b-lab__header">Разработка веб-приложений<i class="material-icons md-top md-grey">&#xE898;</i></h1>
+                        <p class="b-lab__explain">
+                        Создание масштабируемых, нагруженных веб-приложений и веб-сайтов любой сложности. Код каждого проекта хорошо документируется, что упрощает его сопровождаемость. 
+                        </p>
+                        <div class="b-lab-wrp">
+                            <ul class="exp-list">
+                                <li class="exp-list-item">
+                                    <div class="exp-list-item__title-block">
+                                        <div class="cross-btn">
+                                            <div class="cross-line open"></div>
+                                        </div>
+                                        <h3 class="exp-list-item__header">Технологии</h3>
+                                        <div class="exp-list-item-content" style="display: block;">
+                                            <ul class="section-list">
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Backend</h2>
+                                                    <div class="underline-ui">
+                                                        <div class="underline-ui__circle">
+                                                            <i class="material-icons md_5-center md_enum-list-yellow">&#xE2C2;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">Django является основным фреймворком, но и не боимся Rails. Различные кэширования, обращения к внешнему API, асинхронные процедуры, тестирование кода и многое другое.
+                                                    </div>
+                                                </li>
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Frontend</h2>
+                                                    <div class="underline-ui underline-ui_green">
+                                                        <div class="underline-ui__circle underline-ui__circle_green">
+                                                            <i class="material-icons md_5-center md_enum-list-green">&#xE320;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">
+                                                    Vanilla js, JQuery, Sass, jinja2, webpack, BEM (нотация).
+                                                    Для SPA мы используем открытую UI библиотеку React.js (с Redux).  
+                                                    </div>
+                                                </li>
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Инфраструктура</h2>
+                                                    <div class="underline-ui underline-ui_red">
+                                                        <div class="underline-ui__circle underline-ui__circle_red">
+                                                            <i class="material-icons md_5-center md_enum-list-red">&#xE88A;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">Используется хостинг DigitalOcean с *nix-подобными системами, который может быть заменен на более удобный вам вариант. Дополнительный CDN для хранения статических данных.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="exp-list-item">
+                                    <div class="exp-list-item__title-block">
+                                        <div class="cross-btn">
+                                            <div class="cross-line"></div>
+                                        </div>
+                                        <h3 class="exp-list-item__header">Безопасность</h3>
+                                        <div class="exp-list-item-content">
+                                            <ul class="section-list">
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Фаерволы</h2>
+                                                    <div class="underline-ui">
+                                                        <div class="underline-ui__circle">
+                                                            <i class="material-icons md_5-center md_enum-list-yellow">&#xE897;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">Мы реализуем меры безопасности для защиты вашего сайта и пользователей. Кроме того, мы заботимся о предотвращении несанкционированного доступа к инфраструктурам вашей организации.
+                                                    </div>
+                                                </li>
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Защита от фишинга</h2>
+                                                    <div class="underline-ui underline-ui_red">
+                                                        <div class="underline-ui__circle underline-ui__circle_red">
+                                                            <i class="material-icons md_5-center md_enum-list-red">&#xE7FD;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">Наши инженеры по безопасности готовы проконсультировать ваших сотрудников, как предотвратить наиболее популярные и опасные фишинг-атаки.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content b-lab">
+                        <h1 class="b-lab__header">Дизайн<i class="material-icons md-top md-grey">&#xE898;</i></h1>
+                        <p class="b-lab__explain">Проектирование интерфейсов, разработка фирменного стиля, инфографика.</p>
+                        <div class="b-lab-wrp">
+                            <ul class="exp-list">
+                                <li class="exp-list-item">
+                                    <div class="exp-list-item__title-block">
+                                        <div class="cross-btn">
+                                            <div class="cross-line open"></div>
+                                        </div>
+                                        <h3 class="exp-list-item__header">UI/UX</h3>
+                                        <div class="exp-list-item-content" style="display: block;">
+                                            <ul class="section-list">
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Веб-приложения</h2>
+                                                    <div class="underline-ui">
+                                                        <div class="underline-ui__circle">
+                                                            <i class="material-icons md_5-center md_enum-list-yellow">&#xE31E;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">
+                                                    Разработка уникального дизайна с отрисовкой макетов с нуля. 
+                                                    </div>
+                                                </li>
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Мобильные платформы</h2>
+                                                    <div class="underline-ui underline-ui_green">
+                                                        <div class="underline-ui__circle underline-ui__circle_green">
+                                                            <i class="material-icons md_5-center md_enum-list-green">&#xE32C;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">
+                                                    Создание дизайн-макетов с учетом специфики платформы (material design / original iOS design)
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="exp-list-item">
+                                    <div class="exp-list-item__title-block">
+                                        <div class="cross-btn">
+                                            <div class="cross-line"></div>
+                                        </div>
+                                        <h3 class="exp-list-item__header">Статика</h3>
+                                        <div class="exp-list-item-content">
+                                            <ul class="section-list">
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Специальные проекты и промо-страницы</h2>
+                                                    <div class="underline-ui underline-ui_lime">
+                                                        <div class="underline-ui__circle underline-ui__circle_lime">
+                                                            <i class="material-icons md_5-center md_enum-list-lime">&#xE553;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">
 
-</main>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content b-lab">
+                        <h1 class="b-lab__header">Маркетинг<i class="material-icons md-top md-grey">&#xE898;</i></h1>
+                        <p class="b-lab__explain">Установка и разработка инструментов. Реализация экспериментальных стратегий.</p>
+                        <div class="b-lab-wrp">
+                            <ul class="exp-list">
+                                <li class="exp-list-item">
+                                    <div class="exp-list-item__title-block">
+                                        <div class="cross-btn">
+                                            <div class="cross-line open"></div>
+                                        </div>
+                                        <h3 class="exp-list-item__header">Аналитика</h3>
+                                        <div class="exp-list-item-content" style="display: block;">
+                                            <ul class="section-list">
+                                                <li class="enum-list-item">
+                                                    <h2 class="enum-list-item__header">Веб и мобильные приложения</h2>
+                                                    <div class="underline-ui">
+                                                        <div class="underline-ui__circle">
+                                                            <i class="material-icons md_5-center md_enum-list-yellow">&#xE335;</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="enum-list-item-text">Настройка аналитических инструментов. 
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content b-lab">
+                        <h1 class="b-lab__header">Анализ данных<i class="material-icons md-top md-grey">&#xE899;</i></h1>
+                        <p class="b-lab__explain">Данная услуга предоставляется в экспериментальном режиме, пожалуйста свяжитесь с нами по адресу <a href="mailto:ml@betlabs.ru">ml@betlabs.ru</a></p>
+                        <div class="b-lab-wrp">
+                            <ul class="exp-list">
+                                <li class="exp-list-item">
+                                    <div class="exp-list-item__title-block">
+                                        <div class="cross-btn">
+                                            <div class="cross-line open"></div>
+                                        </div>
+                                        <h3 class="exp-list-item__header">ML</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="b-section section-portfolio">
+    <div class="grid grid-pad" style="margin-bottom: 100px;">
+        <div class="col-1-1">
+           <div class="content">
+               <div class="b-section-main-words">Портфолио.</div>
+               <div class="b-section-expl-statement">Наши реализованные проекты.</div>
+           </div>
+        </div>
+    </div>
+    <div class="grid grid-pad grid_above">
+        <div class="col-1-3">
+            <div class="content company-icon">
+                <a href="/en/company/hangart">
+                    <div class="atvImg company-card">
+                        <div class="atvImg-layer" data-img="src/img/L2-HANGART.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L1-HANGART.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L0-HANGART.png"></div>
+                    </div>
+                </a>    
+            </div>
+        </div>
+        <div class="col-1-3">
+            <div class="content company-icon">
+                <a href="http://www.laoptic.com" target="_blank">
+                    <div class="atvImg company-card">
+                        <div class="atvImg-layer" data-img="src/img/L2-LAOPTIC.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L1-LAOPTIC.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L0-LAOPTIC.png"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-1-3">
+            <div class="content company-icon">
+                <a href="http://25floorfilm.com" target="_blank">
+                    <div class="atvImg company-card">
+                        <div class="atvImg-layer" data-img="src/img/L2-25FF.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L1-25FF.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L0-25FF.png"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-pad grid_above">
+        <div class="col-1-3">
+            <div class="content company-icon">
+                <a href="http://lookat.city" target="_blank">
+                    <div class="atvImg company-card">
+                        <div class="atvImg-layer" data-img="src/img/L2-LOCKATCITY.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L1-LOCKATCITY.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L0-LOCKATCITY.png"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-1-3">
+            <div class="content company-icon">
+                <a href="/company/fairinsurance">
+                    <div class="atvImg company-card">
+                        <div class="atvImg-layer" data-img="src/img/L2-FAIRINSURANCE.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L1-FAIRINSURANCE.png"></div>
+                        <div class="atvImg-layer" data-img="src/img/L0-FAIRINSURANCE.png"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-1-3">
+        </div>
+    </div>
+</section>
+<section class="b-section section-contacts" style="padding: 100px 0 0 0;">
+    <div class="contact-container">
+        <div class="grid grid-pad grid_above">
+            <div class="col-7-12">
+                <div class="contact-form-box">
+                    <form class="email-form-box email-form">
+                        <h1 class="email-form__header">Свяжитесь с нами.</h1>
+                        <div class="email-form-steps">
+                            <div class="email-form-step active js-step-1">
+                                <h1 class="email-form-step__header">Пожалуйста, введите ваш <span>email адрес</span></h1>
+                                <div class="email-form-field">
+                                    <div class="col-8-12 _reM">
+                                        <input type="text" class="email-form-field__email js-email-field" placeholder="name@domain.com">
+                                    </div>
+                                    <div class="col-4-12">
+                                        <button class="btn btn_rounded js-email-next" disabled>Далее -></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email-form-step js-step-2">
+                                <h1 class="email-form-step__header">Введите ваше <span>имя</span></h1>
+                                <div class="email-form-field">
+                                    <div class="col-8-12 _reM">
+                                        <input type="text" class="email-form-field__email js-name-field" placeholder="Ваше Имя">
+                                    </div>
+                                    <div class="col-4-12">
+                                        <button class="btn btn_rounded js-name-next" disabled>Далее -></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email-form-step js-step-3">
+                                <h1 class="email-form-step__header">Оставтье ваше <span>сообщение</span></h1>
+                                <div class="email-form-field">
+                                    <div class="col-1-1 _reM">
+                                        <textarea type="text" class="email-form-field__message js-message-field" placeholder="Прямо здесь :)"></textarea>
+                                    </div>
+                                    <div class="col-1-1">
+                                        <button class="btn btn_rounded btn_green js-message-next">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email-form-step js-step-4">
+                                <h1 class="email-form-step__header">Ваше сообщение успешно <span class="email-form-step_success">отправлено!</span></h1>
+                            </div>
+                        </div>
+                        <h2 class="email-form__asap">(Мы свяжемся с вами в самое ближайшее время) </h2>
+                    </form>
+                </div>
+            </div>
+            <div class="col-5-12">
+                <div class="contact-visual-box">
+                    <img class="visual-box__img" src="src/img/paper-plane.png" alt="Betlabs message">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-wrap">
+        <div class="grid grid-pad grid_bottom">
+            <div class="copyrights">All Rights Reserved, BetLabs LLC 2016</div>
+        </div>
+    </div>
+</section>
