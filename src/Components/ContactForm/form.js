@@ -97,13 +97,13 @@ var ContactForm = function (options) {
 	btnMsg.on('click', function(e) {
 		e.preventDefault();
 		var data = {
-			email: eField.val(),
 			name: nameField.val(),
+			email: eField.val(),
 			message: msgField.val(),
 		}
 		$.ajax({
 			   method: "POST",
-			   url: "https://young-journey-50797.herokuapp.com/betlabs",
+			   url: "/send-request",
 			   data: JSON.stringify(data),
 			   success: function(){
 					var activeElem = $('.email-form-step.active');
