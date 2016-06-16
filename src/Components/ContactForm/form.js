@@ -104,6 +104,7 @@ var ContactForm = function (options) {
 		$.ajax({
 			   method: "POST",
 			   url: "/send-request",
+			   contentType: 'application/json',
 			   data: JSON.stringify(data),
 			   success: function(){
 					var activeElem = $('.email-form-step.active');
