@@ -1,9 +1,22 @@
 {{!< default}}
-{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
-{{!-- The big featured header --}}
+{{#contentFor 'header-links'}}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,700italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="{{asset "css/bundle/post.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+{{/contentFor}}
 
-{{!-- Everything inside the #author tags pulls data from the author --}}
+
+{{#contentFor 'footer-links'}}
+<script type="text/javascript" src="{{asset "js/bundle/post.js"}}"></script>
+{{/contentFor}}
+
+
+{{> post-nav }}
+
 {{#author}}
     <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
         <nav class="main-nav overlay clearfix">
