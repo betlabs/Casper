@@ -1,0 +1,12 @@
+{{#get "posts" filter="tags:works"}}
+    {{#foreach posts}}
+        <a class="work-link {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+            <div class="work-info">
+                <div class="work--title">
+                    {{title}}
+                </div>
+                <time class="work--date" datetime="{{date format="YYYY"}}">{{date format="YYYY"}}</time>
+            </div>
+        </a>    
+    {{/foreach}}
+{{/get}}
