@@ -1,7 +1,7 @@
 {{#get "posts" filter="tags:services"}}
     {{#foreach posts}}
         <div class="col-xs-6 col-md-4">
-            <a class="js-work-select work-link" data-work-title="{{title}}" data-work-desc="{{excerpt}}" data-work-link="{{url}}">
+            <a class="js-work-select work-link" data-work-title="{{title}}" data-work-desc="{{excerpt characters="140"}}" data-work-link="{{url}}">
                 <img src="{{image}}" class="work-img">
             </a>
         </div>
