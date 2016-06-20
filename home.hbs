@@ -326,9 +326,48 @@
         </div>
     </div>
     <div class="grid grid-pad grid_above" style="text-align: center; padding: 0;">
-        {{> "works"}}
+        <div class="row" style="padding-left: 20px; margin: 0 0 4rem;">
+            <div class="col-md-4">
+                <div class="work-section--name">
+                    E-commerce
+                </div>
+                <div class="work-section--content">
+                    Разработка e-commerce проектов любой сложности. 
+                    Интеграция со сторонними сервисами. 
+                </div>
+            </div>
+            <div class="col-md-8">
+                {{> "ecom"}}
+            </div>
+        </div>
+        <div class="row" style="padding-left: 20px; margin: 0;">
+            <div class="col-md-4">
+                <div class="work-section--name">
+                    Сайты и сервисы
+                </div>
+                <div class="work-section--content">
+                    Разработка официального сайтов компании. 
+                    Проектирование и разработка веб-приложений. 
+                </div>
+            </div>
+            <div class="col-md-8">
+                {{> "services"}}
+            </div>
+        </div>
     </div>
 </section>
+<div class="work-modal" style="transition-duration: 150ms;">
+  <div class="work-modal-container">
+    <div class="work-modal-box work-modal-box-visible" style="transition-duration: 300ms; color: #fff; background-color: #39a9ed;">
+      <div class="work-modal-box-content">
+        <h4 class="work-modal--title"></h4>
+        <p class="work-modal--title--desc">
+        </p>
+        <a class="work-modal-button" href="">Подробнее</a>
+      </div>
+    </div>
+  </div>
+</div>
 <section class="b-section section-contacts" style="padding: 100px 0 0 0;">
     <div class="contact-container">
         <div class="grid grid-pad grid_above">

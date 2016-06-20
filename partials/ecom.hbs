@@ -1,0 +1,9 @@
+{{#get "posts" filter="tags:ecommerce"}}
+    {{#foreach posts}}
+        <div class="col-xs-6 col-md-4">
+            <a class="js-work-select work-link" data-work-title="{{title}}" data-work-desc="{{excerpt}}" data-work-link="{{url}}">
+                <img src="{{image}}" class="work-img">
+            </a>
+        </div>
+    {{/foreach}}
+{{/get}}

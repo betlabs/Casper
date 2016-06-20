@@ -1,12 +1,32 @@
 {{#get "posts" filter="tags:works"}}
     {{#foreach posts}}
-        <a class="work-link {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-            <div class="work-info">
-                <div class="work--title">
-                    {{title}}
-                </div>
-                <time class="work--date" datetime="{{date format="YYYY"}}">{{date format="YYYY"}}</time>
-            </div>
-        </a>    
+        <div class="col-xs-6 col-md-4">
+            <a class="js-work-select work-link" data-work-title="{{title}}" data-work-desc="{{excerpt}}" data-work-link="{{url}}">
+                <img src="{{image}}" class="work-img">
+            </a>
+        </div>
+    {{/foreach}}
+    {{#foreach posts}}
+        <div class="col-xs-6 col-md-4">
+            <a class="js-work-select work-link" data-work-title="{{title}}" data-work-desc="{{excerpt}}
+
+" data-work-link="{{url}}">
+                <img src="{{image}}" class="work-img">
+            </a>
+        </div>
+    {{/foreach}}
+    {{#foreach posts}}
+        <div class="col-xs-6 col-md-4">
+            <a class="js-work-select work-link" data-work-title="{{title}}" data-work-desc="{{excerpt}}" data-work-link="{{url}}">
+                <img src="{{image}}" class="work-img">
+            </a>
+        </div>
+    {{/foreach}}
+    {{#foreach posts}}
+        <div class="col-xs-6 col-md-4">
+            <a class="js-work-select work-link" data-work-title="{{title}}" data-work-desc="{{excerpt}}" data-work-link="{{url}}">
+                <img src="{{image}}" class="work-img">
+            </a>
+        </div>
     {{/foreach}}
 {{/get}}
