@@ -40,7 +40,7 @@ var actions = function() {
 					$('.manifold').attr('class', 'manifold');
 				}
 			if (!jQuery.browser.mobile) {
-				layout.parallaxMovement($('.introduction'), $(".intro-svg circle:nth-child(2n+1)"), $('.intro-buttons'));
+				//layout.parallaxMovement($('.introduction'), $(".intro-svg circle:nth-child(2n+1)"), $('.intro-buttons'));
 				layout.parallaxMovement($('.introduction'), $('.btn_start'));
 				layout.parallaxMovement($('.introduction'), $('.js-left-action-btn'));
 			}
