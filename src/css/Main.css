@@ -2069,6 +2069,7 @@ body
 	color: #9b9b9b;
 }
 .work-link {
+	line-height: 64px;
 	opacity: 0.75;
 	width: 100px;
 	height: 100px;
@@ -2088,11 +2089,6 @@ body
 }
 .work-img {
 	width: 100%;
-	-webkit-transition: all .25s ease-in-out;
-	   -moz-transition: all .25s ease-in-out;
-	    -ms-transition: all .25s ease-in-out;
-	     -o-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
 }
 .work-img_invert {
 	-webkit-filter: invert(100%);
