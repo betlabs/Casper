@@ -10,7 +10,8 @@ var
 	AgileTXT = require('./DrawComponents/Components').agileTxt,
 	CITxt = require('./DrawComponents/Components').ciTxt,
 	Arrow = require('./DrawComponents/Components').arrowComp,
-	RND = require('./DrawComponents/Components').rndComp;
+	RND = require('./DrawComponents/Components').rndComp,
+	POKECHARM = require('./DrawComponents/PikaComponents').pokeChar;
 
 function generateRandom() {
     var x = Math.floor(Math.random() * (window.innerWidth));
@@ -23,7 +24,7 @@ function generateRandom() {
 	return [x, y];
 }
 var data = [];
-var persons = [AgileTXT, CITxt, RND];
+var persons = [AgileTXT, CITxt, RND, POKECHARM];
 var dotsAmount = (function getMaxDotsAmount(objs) {
 	var maxVal = 0;
 	for (var i = 0; i < objs.length; ++i) {
@@ -239,7 +240,7 @@ var movie = [
 	},
 	function() {
 		layout.showText(textArr);
-		layout.drawMatrix(AgileTXT);
+		layout.drawMatrix(POKECHARM);
 	},
 	function() {
 		layout.runChaos();
